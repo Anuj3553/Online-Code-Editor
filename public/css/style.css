@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(106, 109, 106);
+}
+
+/* NavBar */
+.navBar{
+    background-color: rgb(40 42 54);
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-family: cursive;
+    font-weight: bolder;
+    height: 60px;
+    font-size: 2rem;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+/* Main Container */
+.mainContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.codeEditor{
+    width: 70%;
+    margin: 2rem;
+    height: 80vh;
+}
+
+.CodeMirror{
+    height: 90%;
+}
+
+.controlEditor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+.selectLanguage{
+    width: 25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 2.5rem;
+    margin: 0 2px;
+    background-color: rgb(240, 233, 233);
+    border: 2px solid black;
+}
+
+.btn{
+    height: 2.2rem;
+    width: 3.5rem;
+    background-color: #03ff7c;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background-color: #17e068;
+}
+
+/* Input Output Section */
+
+.textArea{
+    width: 30vw;
+    height: 30vh;
+    margin: 1rem;
+}
+
+.result{
+    background-color: rgb(43, 44, 46);
+    color: white;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.labelText{
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 850px) {
+  .mainContainer{
+    flex-direction: column;
+  }
+  .CodeMirror{
+    width: 100%;
+  }
+  .codeEditor{
+    margin: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  .textArea{
+    width: 85vw;
+  }
+  .selectLanguage{
+    width: 10rem;
+  }
+  .labelText{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .brandName{
+    font-size: large;
+  }
+  img{
+    width: 35px;
+    height: 35px;
+  }
+  .selectLanguage{
+    width: fit-content;
+  }
+}
